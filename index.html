@@ -14,67 +14,36 @@
 </head>
 
 <body>
-    <!-- Hero Section with Video Background -->
-    <div class="hero-section">
-        <video class="hero-video" autoplay muted loop playsinline>
-            <source src="./assets/video/BerserkVideo.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <span class="logo-icon"><i class="fas fa-book-open"></i></span>
+            <h1>MangaVerse</h1>
+        </div>
 
-        <!-- Header -->
-        <header>
-            <div class="logo">
-                <span class="logo-icon"><i class="fas fa-book-open"></i></span>
-                <h1>MangaVerse</h1>
+        <nav class="main-nav">
+            <a href="#" class="nav-link active">Inicio</a>
+            <a href="#collection" class="nav-link">Coleccion</a>
+            <a href="#" class="nav-link">Novedades</a>
+            <a href="#" class="nav-link">Generos</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar manga...">
+                <i class="fas fa-search"></i>
             </div>
-
-            <nav class="main-nav">
-                <a href="#" class="nav-link active">Inicio</a>
-                <a href="#collection" class="nav-link">Coleccion</a>
-                <a href="#" class="nav-link">Novedades</a>
-                <a href="#" class="nav-link">Generos</a>
-            </nav>
-
-            <div class="header-actions">
-                <div class="search-box">
-                    <input type="text" placeholder="Buscar manga...">
-                    <i class="fas fa-search"></i>
-                </div>
-                <button class="btn-account">
-                    <i class="fas fa-user"></i>
-                </button>
-            </div>
-
-            <button class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="btn-account">
+                <i class="fas fa-user"></i>
             </button>
-        </header>
-
-        <!-- Hero Content -->
-        <div class="hero-content">
-            <div class="hero-badge">DESTACADO</div>
-            <h2 class="hero-title">BERSERK</h2>
-            <p class="hero-description">Sumérgete en la oscura y épica historia de Guts, un guerrero solitario en busca de venganza en un mundo dominado por el caos y la oscuridad.</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn-primary">
-                    <i class="fas fa-play"></i>
-                    <span>Leer Ahora</span>
-                </a>
-                <a href="#" class="btn-secondary">
-                    <i class="fas fa-info-circle"></i>
-                    <span>Mas Info</span>
-                </a>
-            </div>
         </div>
 
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <span>Explorar</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
 
     <!-- Manga Collection Section -->
     <section id="collection" class="manga-section">
