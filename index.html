@@ -1,122 +1,240 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/navigation.css">
-    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/icons/Icon_image.jpg" type="image/x-icon">
-
-    <title>Manga</title>
+    <title>MangaVerse | Tu Portal de Manga</title>
 </head>
 
 <body>
+    <!-- Hero Section with Video Background -->
+    <div class="hero-section">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="./assets/video/BerserkVideo.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <!-- Header -->
         <header>
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-book-open"></i></span>
+                <h1>MangaVerse</h1>
+            </div>
 
-                <h1>Mangas</h1>
-               
-                <div class="mobile-menu"></div> 
+            <nav class="main-nav">
+                <a href="#" class="nav-link active">Inicio</a>
+                <a href="#collection" class="nav-link">Coleccion</a>
+                <a href="#" class="nav-link">Novedades</a>
+                <a href="#" class="nav-link">Generos</a>
+            </nav>
 
-                    <div class="navigator">
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar manga...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <button class="btn-account">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
 
-                        <div class="navigator-items">
-                    
-                            
-                            <a href="#">Home</a> 
-                            <a href="#">News</a>
-                            <a href="#">About</a>
-                            <a href="#">Contact</a>
-                            <a class="search-item" href="#">Search</a>
-                            <input type="search" placeholder="Search">
-                            
-
-                        </div>
-                        <div class="navigator-bar"></div>
-                    </div>
-                    
-                
-                
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </header>
 
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-badge">DESTACADO</div>
+            <h2 class="hero-title">BERSERK</h2>
+            <p class="hero-description">Sumérgete en la oscura y épica historia de Guts, un guerrero solitario en busca de venganza en un mundo dominado por el caos y la oscuridad.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">
+                    <i class="fas fa-play"></i>
+                    <span>Leer Ahora</span>
+                </a>
+                <a href="#" class="btn-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Mas Info</span>
+                </a>
+            </div>
+        </div>
 
-    
-    
-        <section class="home">
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Explorar</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
 
-                    
-                        <video class="Wallpapers active" src="./assets/video/BerserkVideo.mp4" autoplay muted loop></video>
-                        <video class="Wallpapers" src="./assets/video/VinlandSaga-Video.mp4" autoplay muted loop></video>
-                        <video class="Wallpapers" src="./assets/video/OnePieceVideo.mp4" autoplay muted loop></video>
-                        <video class="Wallpapers" src="./assets/video/Mob-Pyscho-Video.mp4" autoplay muted loop></video>
-                        <video class="Wallpapers" src="./assets/video/ChainsawManVideo.mp4" autoplay muted loop></video>
-                        
-                
-                <div class="content active">
-                    <h1>Berserk</h1>
-                    <p>Berserk is a dark and epic manga that follows the story of Guts, a lone mercenary warrior seeking vengeance against his former best friend who sacrificed their comrades in arms to become a god-like ruler. Along the way, he battles hordes of demonic creatures and confronts his own inner demons in a world ruled by darkness and chaos.</p>
-                    <a>
-                        <span class="button-text">Read More</span>
-                        <span class="button-overlay"></span>
-                    </a>
+    <!-- Manga Collection Section -->
+    <section id="collection" class="manga-section">
+        <div class="section-header">
+            <h2 class="section-title">Coleccion Popular</h2>
+            <p class="section-subtitle">Descubre los mangas mas leidos por nuestra comunidad</p>
+        </div>
+
+        <div class="manga-grid">
+            <!-- Card 1 -->
+            <article class="manga-card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/I/91S+-LZmd6L._AC_UF1000,1000_QL80_.jpg" alt="One Piece">
+                    <div class="card-overlay">
+                        <span class="card-genre">Aventura</span>
+                    </div>
                 </div>
-
-                <div class="content">
-                    <h1>Vinland Saga</h1>
-                    <p>Vinland Saga is a gripping manga that takes place during the Viking Age and follows the story of Thorfinn, a young warrior seeking revenge against the man who killed his father. As he travels with a band of mercenaries, Thorfinn confronts the brutality of war and the futility of revenge, ultimately finding himself drawn to a peaceful way of life in a land known as Vinland. With its complex characters, intense action scenes, and exploration of themes like honor, morality, and the nature of violence, Vinland Saga is a manga that will leave readers thinking long after the final page.</p>
-                    <a>
-                        <span class="button-text">Read More</span>
-                        <span class="button-overlay"></span>
-                    </a>
+                <div class="card-content">
+                    <h3 class="card-title">One Piece</h3>
+                    <a href="#" class="btn-read">Leer</a>
                 </div>
+            </article>
 
-                <div class="content">
-                    <h1>One Piece</h1>
-                    <p>One Piece is a captivating manga that follows the story of Monkey D. Luffy, a young pirate with a rubber body and an unwavering dream of becoming the Pirate King. Along with his diverse and quirky crew of allies, known as the Straw Hat Pirates, Luffy embarks on an epic adventure filled with thrilling battles, unexpected alliances, and unforgettable characters. In a world of treasure, magic, and powerful foes, Luffy and his crew must overcome countless challenges and overcome their own personal demons to achieve their ultimate goal.</p>
-                    <a>
-                        <span class="button-text">Read More</span>
-                        <span class="button-overlay"></span>
-                    </a>
+            <!-- Card 2 -->
+            <article class="manga-card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/I/81GFaLr6gaL._AC_UF1000,1000_QL80_.jpg" alt="Berserk">
+                    <div class="card-overlay">
+                        <span class="card-genre">Dark Fantasy</span>
+                    </div>
                 </div>
-
-                <div class="content">
-                    <h1>Mob Pyscho 100</h1>
-                    <p>Mob Psycho 100 is an intriguing manga that follows the story of Shigeo Kageyama, a young boy with incredibly powerful psychic abilities who struggles to fit in with his peers. As he works as an assistant to a fraudulent psychic, Mob encounters various supernatural phenomena and learns to control his powers, all while navigating the complex and often emotional landscape of adolescence. With its vibrant artwork and exploration of themes like self-acceptance, personal growth, and the blurred lines between reality and imagination, Mob Psycho 100 is a manga that appeals to readers of all ages.</p>
-                    <a>
-                        <span class="button-text">Read More</span>
-                        <span class="button-overlay"></span>
-                    </a>
+                <div class="card-content">
+                    <h3 class="card-title">Berserk</h3>
+                    <a href="#" class="btn-read">Leer</a>
                 </div>
+            </article>
 
-                <div class="content">
-                    <h1>Chainsaw Man</h1>
-                    <p>Chainsaw Man is a thrilling and gory manga that follows the story of Denji, a young man who merges with a chainsaw demon to become a powerful and ruthless devil hunter. With a diverse and eccentric cast of characters, Chainsaw Man explores themes of identity, morality, and the nature of power as Denji and his allies battle hordes of deadly devils in a world where humans can make deals with the supernatural. With its unique blend of horror, action, and dark humor, Chainsaw Man is a manga that will keep readers on the edge of their seats.</p>
-                    <a>
-                        <span class="button-text">Read More</span>
-                        <span class="button-overlay"></span>
-                    </a>
+            <!-- Card 3 -->
+            <article class="manga-card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/I/81HbRTd-HML._AC_UF1000,1000_QL80_.jpg" alt="Chainsaw Man">
+                    <div class="card-overlay">
+                        <span class="card-genre">Accion</span>
+                    </div>
                 </div>
-                
-                
-                <div class="social-media">
-                    <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://github.com/LucasN5" class="icon"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/lucasdasilvanunes/" class="icon"><i class="fab fa-linkedin"></i></a>
+                <div class="card-content">
+                    <h3 class="card-title">Chainsaw Man</h3>
+                    <a href="#" class="btn-read">Leer</a>
                 </div>
+            </article>
 
-
-                <div class="slider-navigation">
-                    <div class="nav-btn active"></div>
-                    <div class="nav-btn"></div>
-                    <div class="nav-btn"></div>
-                    <div class="nav-btn"></div>
-                    <div class="nav-btn"></div>
+            <!-- Card 4 -->
+            <article class="manga-card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/I/81pfSs7ENYL._AC_UF1000,1000_QL80_.jpg" alt="Vinland Saga">
+                    <div class="card-overlay">
+                        <span class="card-genre">Historico</span>
+                    </div>
                 </div>
+                <div class="card-content">
+                    <h3 class="card-title">Vinland Saga</h3>
+                    <a href="#" class="btn-read">Leer</a>
+                </div>
+            </article>
 
-        </section>
-        
+            <!-- Card 5 -->
+            <article class="manga-card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/I/91jkeYL5ABL._AC_UF1000,1000_QL80_.jpg" alt="Mob Psycho 100">
+                    <div class="card-overlay">
+                        <span class="card-genre">Sobrenatural</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Mob Psycho 100</h3>
+                    <a href="#" class="btn-read">Leer</a>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="manga-card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/I/71mLnWCEj3L._AC_UF1000,1000_QL80_.jpg" alt="Attack on Titan">
+                    <div class="card-overlay">
+                        <span class="card-genre">Accion</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Attack on Titan</h3>
+                    <a href="#" class="btn-read">Leer</a>
+                </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="manga-card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/I/81dLfMTuVmL._AC_UF1000,1000_QL80_.jpg" alt="Jujutsu Kaisen">
+                    <div class="card-overlay">
+                        <span class="card-genre">Sobrenatural</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Jujutsu Kaisen</h3>
+                    <a href="#" class="btn-read">Leer</a>
+                </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="manga-card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/I/81dFzlLNlcL._AC_UF1000,1000_QL80_.jpg" alt="Death Note">
+                    <div class="card-overlay">
+                        <span class="card-genre">Thriller</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Death Note</h3>
+                    <a href="#" class="btn-read">Leer</a>
+                </div>
+            </article>
+
+            <!-- Card 9 -->
+            <article class="manga-card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/I/81jmHGmDgpL._AC_UF1000,1000_QL80_.jpg" alt="Demon Slayer">
+                    <div class="card-overlay">
+                        <span class="card-genre">Accion</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Demon Slayer</h3>
+                    <a href="#" class="btn-read">Leer</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon"><i class="fas fa-book-open"></i></span>
+                <h3>MangaVerse</h3>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terminos</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/LucasN5" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lucasdasilvanunes/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MangaVerse. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
     <script src="./main.js"></script>
-
 </body>
 </html>
